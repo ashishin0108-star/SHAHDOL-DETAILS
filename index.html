@@ -1079,12 +1079,75 @@
     },
     'history-and-heritage': {
       title: 'History & Heritage', hindi: 'शहडोल का इतिहास एवं विरासत', icon: 'account_balance',
-      intro: 'शहडोल क्षेत्र का इतिहास प्राचीन बस्तियों, मंदिरों, पुरातात्विक स्थलों और बघेलखंड की सांस्कृतिक परंपराओं से जुड़ा है।',
-      blocks: [
-        ['प्राचीन विरासत', 'क्षेत्र के मंदिरों और पुरातात्विक स्थलों की जानकारी, इतिहास और संरक्षण संबंधी विवरण यहाँ प्रस्तुत किए जाएँगे।'],
-        ['स्थानीय इतिहास', 'स्थानीय इतिहास, ऐतिहासिक अभिलेखों और जिला गजेटियर के आधार पर प्रमाणित जानकारी जोड़ें।'],
-        ['धरोहर संरक्षण', 'ऐतिहासिक स्थलों की स्वच्छता, संरक्षण और जिम्मेदार पर्यटन को बढ़ावा देना आवश्यक है।']
-      ]
+      customHtml: `
+        <section class="mb-10">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-3 mb-5">
+            <div>
+              <p class="text-sm uppercase tracking-[0.18em] font-bold text-primary">इतिहास एवं विरासत</p>
+              <h2 class="text-2xl md:text-3xl font-bold text-on-surface mt-1">शहडोल की ऐतिहासिक झलकियाँ</h2>
+              <p class="text-on-surface-variant mt-2">शहडोल की ऐतिहासिक और स्थापत्य विरासत की तस्वीरें</p>
+            </div>
+            <span class="text-xs text-on-surface-variant">5 तस्वीरें</span>
+          </div>
+
+          <div class="grid grid-cols-2 md:grid-cols-6 gap-3 md:gap-4">
+            <figure class="col-span-2 md:col-span-2 md:row-span-2 group overflow-hidden rounded-xl shadow-md bg-surface-container">
+              <img src="https://cdn.s3waas.gov.in/s354229abfcfa5649e7003b83dd4755294/uploads/2019/07/2019072656.jpg"
+                   alt="शहडोल की ऐतिहासिक धरोहर" class="w-full h-56 md:h-full min-h-[250px] object-cover group-hover:scale-105 transition-transform duration-500"
+                   loading="lazy">
+              <figcaption class="p-3 text-sm font-semibold">शहडोल की ऐतिहासिक धरोहर</figcaption>
+            </figure>
+            <figure class="col-span-1 md:col-span-2 group overflow-hidden rounded-xl shadow-md bg-surface-container">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Virat_Mandir_shahdol_Madhya_Pradesh_India.jpg/960px-Virat_Mandir_shahdol_Madhya_Pradesh_India.jpg"
+                   alt="विराट मंदिर का शिखर" class="w-full h-36 md:h-44 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+              <figcaption class="p-3 text-sm font-semibold">विराट मंदिर का शिखर</figcaption>
+            </figure>
+            <figure class="col-span-1 md:col-span-2 group overflow-hidden rounded-xl shadow-md bg-surface-container">
+              <img src="https://images.bhaskarassets.com/thumb/730x0/web2images/521/2022/10/09/2edfb666-8024-40ad-a1d1-7a7f7db0a2e6_1665301023190.jpg"
+                   alt="शहडोल का विराटेश्वर मंदिर" class="w-full h-36 md:h-44 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+              <figcaption class="p-3 text-sm font-semibold">विराटेश्वर मंदिर</figcaption>
+            </figure>
+            <figure class="col-span-1 md:col-span-2 group overflow-hidden rounded-xl shadow-md bg-surface-container">
+              <img src="https://staticimg.amarujala.com/assets/images/2025/02/25/shahadal-ka-varata-mathara_9552e7fe6d7c8abf71cdc995079f2317.jpeg?q=80"
+                   alt="विराट मंदिर की प्राचीन स्थापत्य कला" class="w-full h-36 md:h-44 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+              <figcaption class="p-3 text-sm font-semibold">प्राचीन स्थापत्य कला</figcaption>
+            </figure>
+            <figure class="col-span-1 md:col-span-2 group overflow-hidden rounded-xl shadow-md bg-surface-container">
+              <img src="https://vushii.com/uploads/758283460_Virat%20Mandir%2C%20Shahdol6.jpg"
+                   alt="विराट मंदिर की पत्थर पर नक्काशी" class="w-full h-36 md:h-44 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+              <figcaption class="p-3 text-sm font-semibold">पत्थरों पर बारीक नक्काशी</figcaption>
+            </figure>
+          </div>
+          <p class="text-xs text-on-surface-variant mt-3">चित्र: जिला पोर्टल तथा सार्वजनिक रूप से उपलब्ध मंदिर-चित्र।</p>
+        </section>
+
+        <article class="prose max-w-none text-on-surface">
+          <div class="border-l-4 border-primary pl-4 mb-6">
+            <h2 class="text-2xl md:text-3xl font-bold text-primary mb-1">इतिहास</h2>
+            <p class="text-sm text-on-surface-variant">शहडोल जिला, मध्य प्रदेश</p>
+          </div>
+
+          <div class="space-y-5 text-[15px] md:text-base leading-8 text-on-surface-variant">
+            <p>दक्षिण-पूर्वी रेलवे के बिलासपुर-कटनी खंड पर स्थित शहडोल का नाम इसके मुख्यालय से जुड़ा है। यह मध्य प्रदेश के मध्य-पूर्वी भाग में स्थित है। जिले का नाम सोहागपुर गांव के शहडोल अहिर के नाम पर रखा गया था, जिनके बारे में माना जाता है कि उन्होंने सोहागपुर से लगभग 2.5 किलोमीटर दूर पुराने शहडोल गांव की स्थापना की थी। सोहागपुर के पूर्व इलाकेदार परिवार के पूर्वज जामनी भान, बघेलखंड के महाराजा वीरभान सिंह के दूसरे बेटे थे। उन्होंने सोहागपुर में बसने का निर्णय लिया और आसपास बसने वालों को सुविधाएँ देने का आश्वासन दिया। उन्होंने यह भी घोषित किया कि जंगल साफ करके बसाई गई बस्तियों के नाम उनके अग्रणी बसने वालों के नाम पर रखे जाएँगे। बाद में यह स्थान रीवा के महाराजा और भ्रमण पर आने वाले ब्रिटिश अधिकारियों का पड़ाव बना। शहडोल गांव के आसपास कई बस्तियाँ जुड़ती गईं और वह धीरे-धीरे नगर के रूप में विकसित हुआ। 1948 में रियासतों के विलय के बाद जिला मुख्यालय उमरिया से शहडोल स्थानांतरित किया गया। शहडोल जिला रीवा संभाग के दक्षिणी भाग में स्थित है।</p>
+
+            <p>रीवा राज्य गजेटियर में एक परंपरा का उल्लेख है, जो सोहागपुर को महाभारत के राजा विराट से जोड़ती है। हालांकि शहडोल जिले का प्रारंभिक इतिहास स्पष्ट रूप से दर्ज नहीं है। सोहागपुर, बांधवगढ़ आदि स्थानों पर बिखरे भवनों के अवशेष और पुरानी संरचनाएँ विभिन्न ऐतिहासिक कालों की याद दिलाती हैं। बाद के गुप्त शासकों के समय पुष्यमित्र नाम से जाने जाने वाले लोगों का एक समूह संभवतः नर्मदा घाटी के मैकाल क्षेत्र में या उसके आसपास शक्तिशाली हुआ। ऐसा माना जाता है कि शहडोल जिले का कुछ हिस्सा उनके राज्य में रहा होगा।</p>
+
+            <p>सातवीं शताब्दी के एक अभिलेख के आधार पर डॉ. हीरालाल ने सुझाव दिया था कि उसमें उल्लिखित ‘मनापुरम’ संभवतः बांधवगढ़ तहसील का मानपुर हो सकता है और इस आधार पर राष्ट्रकूट वंश का इस क्षेत्र पर शासन होने की संभावना व्यक्त की गई। हालांकि यह प्रमाण अनुमान पर आधारित है, क्योंकि मनपुर नाम के अन्य स्थान भी मौजूद हैं। दसवीं और ग्यारहवीं शताब्दी के दौरान जिले का बड़ा भाग रतनपुर के कलचुरी साम्राज्य में शामिल था। तेरहवीं शताब्दी में कलचुरी शासक ने बांधवगढ़ का किला रीवा के बघेल प्रमुख कर्णदेव को दहेज में दिया था। 1597 तक बांधवगढ़ बघेलों की राजधानी रहा, जिसके बाद राजधानी रीवा स्थानांतरित कर दी गई।</p>
+
+            <p>उन्नीसवीं शताब्दी के आरंभ में, 1808 के आसपास, सोहागपुर और बांधवगढ़ तहसीलों का काफी हिस्सा मराठों के अधिकार में चला गया और 1826 में यह क्षेत्र अंग्रेजों के नियंत्रण में आ गया। 1857 के विद्रोह के बाद रामगढ़ (मंडला जिले) और अन्य स्थानों पर विद्रोहियों को दबाने में रीवा के शासक द्वारा दी गई सहायता के बदले सोहागपुर और अमरकंटक के क्षेत्र रीवा शासकों को दे दिए गए। इसके बाद 1947 तक यह क्षेत्र बघेल शासन के अधीन रहा। 1947 में रीवा रियासत का भारतीय संघ में विलय हो गया। जिले के उपलब्ध पुरातात्विक और मुद्राशास्त्रीय साक्ष्यों की जाँच कर एक क्रमबद्ध ऐतिहासिक विवरण तैयार करने की आवश्यकता भी बताई गई है।</p>
+
+            <p>शहडोल जिले के गठन का सही वर्ष आधिकारिक अभिलेखों में उपलब्ध नहीं है। स्थानीय विवरणों के अनुसार 1935 में उमरिया मुख्यालय के साथ जिले का गठन किया गया था। सोहागपुर तहसील का गठन, जिसका क्षेत्र वर्तमान से काफी बड़ा था, लगभग 1860 का माना जाता है। ब्यौहारी और बांधवगढ़ तहसीलों का गठन 1896 तक माना जाता है। 1935 में पुरानी तहसीलों का पुनर्गठन किया गया और सोहागपुर तहसील के दक्षिणी भाग से पुष्पराजगढ़ नाम की नई तहसील बनाई गई। यह व्यवस्था विंध्य प्रदेश के गठन तक जारी रही। विंध्य प्रदेश के गठन के बाद ब्यौहारी तहसील के कुछ गांव सतना जिले की अमरपाटन तहसील में स्थानांतरित किए गए।</p>
+
+            <p>हरे-भरे वनों, कोयले और अन्य खनिज संसाधनों तथा जनजातीय आबादी के कारण शहडोल जिले का विशेष महत्व है। यह विंध्याचल क्षेत्र के बीच स्थित है और यहाँ कोयले के विशाल भंडार पाए जाते हैं। प्राकृतिक संसाधन और सांस्कृतिक विविधता इस जिले की पहचान का महत्वपूर्ण हिस्सा हैं।</p>
+          </div>
+          <div class="mt-8 rounded-xl bg-surface-container-low p-5">
+            <h3 class="font-bold text-lg text-primary mb-2">ऐतिहासिक जानकारी का स्रोत</h3>
+            <p class="text-sm leading-7 text-on-surface-variant">यह लेख आपके दिए गए इतिहास-पाठ को व्यवस्थित करके प्रस्तुत करता है। ऐतिहासिक तथ्यों के संदर्भ और अधिक जानकारी के लिए जिला प्रशासन के आधिकारिक इतिहास पृष्ठ को देखें:
+              <a class="text-primary font-semibold underline" href="https://shahdol.mp.gov.in/history/" target="_blank" rel="noopener noreferrer">शहडोल जिला – इतिहास</a>.
+            </p>
+          </div>
+        </article>
+      `
     },
     'tourism-and-places': {
       title: 'Tourism & Places', hindi: 'पर्यटन स्थल', icon: 'travel_explore',
@@ -1163,8 +1226,10 @@
                 <div><p class="text-secondary-fixed text-sm font-semibold tracking-widest uppercase">SHAHDOL DETAILS</p><h1 class="text-3xl md:text-4xl font-bold mt-1">${p.title}</h1><p class="mt-2 text-white/80">${p.hindi}</p></div>
               </div>
               <div class="p-6 md:p-10">
-                <p class="text-lg leading-8 text-on-surface-variant max-w-4xl">${p.intro}</p>
-                <div class="grid md:grid-cols-3 gap-5 mt-9">${p.blocks.map((b,i)=>`<article class="rounded-xl border border-outline-variant/50 bg-surface p-6 hover:shadow-lg transition-shadow"><div class="w-10 h-10 rounded-full bg-secondary-fixed text-primary flex items-center justify-center font-bold mb-4">0${i+1}</div><h2 class="text-xl font-bold text-primary mb-3">${b[0]}</h2><p class="leading-7 text-on-surface-variant">${b[1]}</p></article>`).join('')}</div>
+                ${p.customHtml ? p.customHtml : `
+                  <p class="text-lg leading-8 text-on-surface-variant max-w-4xl">${p.intro}</p>
+                  <div class="grid md:grid-cols-3 gap-5 mt-9">${(p.blocks || []).map((b,i)=>`<article class="rounded-xl border border-outline-variant/50 bg-surface p-6 hover:shadow-lg transition-shadow"><div class="w-10 h-10 rounded-full bg-secondary-fixed text-primary flex items-center justify-center font-bold mb-4">0${i+1}</div><h2 class="text-xl font-bold text-primary mb-3">${b[0]}</h2><p class="leading-7 text-on-surface-variant">${b[1]}</p></article>`).join('')}</div>
+                `}
                 ${slug === 'contact-and-directory' ? `<form id="siteFeedback" class="mt-10 max-w-2xl grid gap-4"><h2 class="text-2xl font-bold text-primary">वेबसाइट सुझाव फॉर्म</h2><input required class="border border-outline-variant rounded p-3" placeholder="आपका नाम"><input required type="email" class="border border-outline-variant rounded p-3" placeholder="ईमेल"><textarea required rows="4" class="border border-outline-variant rounded p-3" placeholder="अपना संदेश लिखें"></textarea><button class="bg-primary text-white rounded px-6 py-3 w-fit hover:bg-primary-container" type="submit">संदेश जमा करें</button><p id="feedbackMessage" class="hidden text-green-700">धन्यवाद! यह डेमो फॉर्म है; संदेश वास्तव में भेजा नहीं गया।</p></form>` : ''}
               </div>
             </div>
